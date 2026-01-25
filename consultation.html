@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Consultation - CodeinBrain</title>
+    <meta name="description" content="Book your free consultation with CodeinBrain experts. Discuss your project, get recommendations, and understand pricing options.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ==================== HEADER ==================== -->
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo"><i class="fas fa-brain"></i> CodeinBrain</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="consultation.html" class="cta-btn">Free Consultation</a></li>
+            </ul>
+            <div class="nav-social">
+                <a href="https://wa.me/919407519026" target="_blank" class="nav-social-link" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="tel:+919407519026" class="nav-social-link" title="Call">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="https://www.instagram.com/code.inbrain/" target="_blank" class="nav-social-link" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/codeinbrain" target="_blank" class="nav-social-link" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero consultation-hero">
+        <div class="hero-content">
+            <p class="eyebrow">No commitment required</p>
+            <h1>Free <span>Consultation</span></h1>
+            <p class="tagline">Let's discuss your project and explore how we can help you achieve your digital goals.</p>
+            <div class="hero-buttons">
+                <a class="btn-primary" href="#consultation-form">Book now</a>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONSULTATION SECTION ==================== -->
+    <section class="section consultation-main" id="consultation-form">
+        <div class="container">
+            <div class="consultation-layout">
+                <div class="consultation-expect">
+                    <h2>What to Expect</h2>
+                    
+                    <div class="expect-step">
+                        <h4>
+                            <span class="step-number">1</span>
+                            Project Understanding
+                        </h4>
+                        <p>
+                            We'll listen to your project requirements, goals, target audience, and budget constraints. No assumptions, just genuine understanding.
+                        </p>
+                    </div>
+
+                    <div class="expect-step">
+                        <h4>
+                            <span class="step-number">2</span>
+                            Expert Recommendation
+                        </h4>
+                        <p>
+                            Based on your requirements, we'll recommend the best approach, technology stack, and timeline for your project.
+                        </p>
+                    </div>
+
+                    <div class="expect-step">
+                        <h4>
+                            <span class="step-number">3</span>
+                            Pricing Breakdown
+                        </h4>
+                        <p>
+                            We'll provide transparent pricing with no hidden costs. Discuss flexible payment options and project phases.
+                        </p>
+                    </div>
+
+                    <div class="expect-step">
+                        <h4>
+                            <span class="step-number">4</span>
+                            Next Steps
+                        </h4>
+                        <p>
+                            We'll outline the next steps, timeline, and how we'll work together to make your vision a reality.
+                        </p>
+                    </div>
+
+                    <div class="consultation-summary">
+                        <p>
+                            <strong>Duration:</strong> 30-45 minutes<br>
+                            <strong>Cost:</strong> Completely FREE<br>
+                            <strong>Format:</strong> Video call, Phone call, or In-person
+                        </p>
+                    </div>
+                </div>
+
+                <div class="consultation-form-wrapper">
+                    <h2>Book Your Consultation</h2>
+                    
+                    <form onsubmit="submitConsultationForm(event)">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Your full name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company/Business Name</label>
+                            <input type="text" id="company" name="company" placeholder="Your company name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Interested In *</label>
+                            <select id="service" name="service" required>
+                                <option value="">-- Select a service --</option>
+                                <option value="Website Development">Website Development</option>
+                                <option value="WordPress Website">WordPress Website</option>
+                                <option value="E-Commerce Website">E-Commerce Website</option>
+                                <option value="Mobile App Development">Mobile App Development</option>
+                                <option value="UI/UX Design">UI/UX Design</option>
+                                <option value="Digital Marketing">Digital Marketing</option>
+                                <option value="SEO Services">SEO Services</option>
+                                <option value="Multiple Services">Multiple Services</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget">Budget Range *</label>
+                            <select id="budget" name="budget" required>
+                                <option value="">-- Select budget range --</option>
+                                <option value="Less than ₹50,000">Less than ₹50,000</option>
+                                <option value="₹50,000 - ₹1,00,000">₹50,000 - ₹1,00,000</option>
+                                <option value="₹1,00,000 - ₹5,00,000">₹1,00,000 - ₹5,00,000</option>
+                                <option value="₹5,00,000 - ₹10,00,000">₹5,00,000 - ₹10,00,000</option>
+                                <option value="Above ₹10,00,000">Above ₹10,00,000</option>
+                                <option value="Not Sure">Not Sure</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="timeline">Project Timeline *</label>
+                            <select id="timeline" name="timeline" required>
+                                <option value="">-- Select timeline --</option>
+                                <option value="ASAP (Urgent)">ASAP (Urgent)</option>
+                                <option value="Within 1-2 months">Within 1-2 months</option>
+                                <option value="Within 2-3 months">Within 2-3 months</option>
+                                <option value="Within 3-6 months">Within 3-6 months</option>
+                                <option value="6+ months">6+ months</option>
+                                <option value="Not Decided Yet">Not Decided Yet</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Tell Us About Your Project</label>
+                            <textarea id="message" name="message" placeholder="Describe your project, goals, and any specific requirements..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="preference">Preferred Consultation Mode *</label>
+                            <select id="preference" name="preference" required>
+                                <option value="">-- Select mode --</option>
+                                <option value="WhatsApp Call">WhatsApp Call</option>
+                                <option value="Phone Call">Phone Call</option>
+                                <option value="Video Call">Video Call (Google Meet/Zoom)</option>
+                                <option value="In-Person">In-Person Meeting</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" style="margin-bottom: 30px;">
+                            <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                                <input type="checkbox" name="agree" required style="width: 20px; height: 20px; cursor: pointer;">
+                                <span style="color: var(--text-gray);">I agree to the terms and privacy policy</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="form-submit">Book My Free Consultation</button>
+                    </form>
+
+                    <p class="form-footnote">
+                        We'll contact you within 24 hours to confirm your consultation slot.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    
+
+    <!-- ==================== CTA SECTION ==================== -->
+    <section class="section cta-gradient">
+        <div class="container">
+            <h2 class="cta-title">Don't Wait - Let's Get Started!</h2>
+            <p class="cta-copy">
+                Book your free consultation today and let's discuss how we can help your business succeed online.
+            </p>
+            <a href="#consultation-form" class="btn-primary btn-inverted">Book Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CodeinBrain</h3>
+                    <p style="color: var(--text-gray); line-height: 1.8;">
+                        Building smart digital solutions for businesses worldwide since 2016.
+                    </p>
+                    <div class="social-links" style="margin-top: 20px;">
+                        <a href="https://www.instagram.com/code.inbrain/" target="_blank" class="social-link">📷</a>
+                        <a href="https://www.facebook.com/codeinbrain" target="_blank" class="social-link">f</a>
+                        <a href="https://www.linkedin.com/company/codeinbrain" target="_blank" class="social-link">in</a>
+                        <a href="https://www.twitter.com/codeinbrain" target="_blank" class="social-link">𝕏</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#web-dev">Website Development</a></li>
+                        <li><a href="services.html#mobile-app">Mobile Apps</a></li>
+                        <li><a href="services.html#ui-ux">UI/UX Design</a></li>
+                        <li><a href="services.html#ecommerce">E-Commerce</a></li>
+                        <li><a href="services.html#seo">SEO & Marketing</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-item" style="gap: 10px; margin-bottom: 15px;">
+                        <span>📧</span>
+                        <div>
+                            <p style="color: var(--text-gray); font-size: 0.9rem;">Email</p>
+                            <a href="mailto:codeinbrain24@gmail.com">codeinbrain24@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item" style="gap: 10px; margin-bottom: 15px;">
+                        <span>📱</span>
+                        <div>
+                            <p style="color: var(--text-gray); font-size: 0.9rem;">Phone</p>
+                            <a href="tel:+919407519026">+91 9407519026</a>
+                        </div>
+                    </div>
+                    <div class="contact-item" style="gap: 10px;">
+                        <span>💬</span>
+                        <div>
+                            <p style="color: var(--text-gray); font-size: 0.9rem;">WhatsApp</p>
+                            <a href="https://wa.me/919407519026">Start Chat</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 CodeinBrain. All rights reserved.</p>
+                <p>Designed & Developed with ❤️ by CodeinBrain</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== FLOATING ELEMENTS ==================== -->
+    <a href="https://wa.me/919407519026" class="whatsapp-btn" title="Chat on WhatsApp">💬</a>
+    <a href="tel:+919407519026" class="call-btn" title="Call Us">☎️</a>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

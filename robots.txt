@@ -1,0 +1,28 @@
+# CodeinBrain Website - robots.txt
+# Allow search engines to crawl and index all pages
+
+User-agent: *
+Allow: /
+Disallow: /images/temp/
+Disallow: /admin/
+Disallow: /*.pdf$
+Disallow: /*?*sort=
+
+# Sitemap location
+Sitemap: https://codeinbrain.com/sitemap.xml
+
+# Specific rules for search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Crawl delay (in seconds) - Optional
+Crawl-delay: 1
