@@ -370,6 +370,7 @@ nav {
 }
 
 .btn-primary {
+  display: inline-block;
   background: var(--gradient-primary);
   color: white;
   padding: clamp(12px, 2vw, 15px) clamp(30px, 5vw, 40px);
@@ -380,6 +381,10 @@ nav {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border: none;
 }
 
 .btn-primary::before {
@@ -1829,11 +1834,20 @@ footer {
   margin-bottom: clamp(25px, 4vw, 40px);
 }
 
+.footer-section {
+  min-width: 0;
+}
+
 .footer-section h3 {
   font-size: clamp(1.05rem, 2vw, 1.2rem);
   margin-bottom: clamp(15px, 2.5vw, 20px);
   color: var(--primary-color);
   font-weight: 700;
+}
+
+.footer-section p {
+  font-size: clamp(0.875rem, 1.5vw, 0.95rem);
+  word-break: break-word;
 }
 
 .footer-section ul {
@@ -1849,6 +1863,7 @@ footer {
   font-size: clamp(0.875rem, 1.5vw, 0.95rem);
   transition: all 0.3s ease;
   display: inline-block;
+  word-break: break-word;
 }
 
 .footer-section ul li a:hover {
@@ -1881,6 +1896,22 @@ footer {
   color: var(--dark-bg);
   transform: translateY(-5px) rotate(360deg);
   box-shadow: 0 5px 15px rgba(0, 212, 255, 0.4);
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact-item a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  word-break: break-word;
+}
+
+.contact-item a:hover {
+  color: var(--light-text);
 }
 
 .footer-bottom {
@@ -2262,17 +2293,68 @@ footer {
     grid-template-columns: 1fr;
   }
   
-  /* Improve touch targets for mobile */
-  .service-card,
-  .portfolio-item,
-  .testimonial-card,
-  .team-card {
-    min-height: 200px;
+  .footer-section {
+    padding: 0;
   }
   
-  .team-social-link {
-    width: 40px;
-    height: 40px;
+  .footer-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  
+  .footer-section p {
+    font-size: 0.875rem;
+  }
+  
+  .footer-section ul li a {
+    font-size: 0.875rem;
+  }
+  
+  .social-links {
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .social-link {
+    width: 42px;
+    height: 42px;
+    font-size: 1.1rem;
+  }
+  
+  .contact-item {
+    margin-bottom: 12px !important;
+    font-size: 0.875rem;
+  }
+  
+  .contact-item span {
+    font-size: 1.2rem;
+    margin-right: 8px;
+    flex-shrink: 0;
+  }
+  
+  .contact-item a {
+    font-size: 0.875rem;
+    word-break: break-word;
+  }
+  
+  .footer-bottom {
+    padding: 15px 0;
+    font-size: 0.8rem;
+  }
+  
+  .footer-bottom p {
+    margin-bottom: 8px;
+    word-break: break-word;
+  }
+  
+  /* Improve touch targets for mobile */
+  .social-link,
+  .footer-section ul li a {
+    min-height: 44px;
+    min-width: 44px;
+    display: flex;
+    align-items: center;
+  }
   }
   
   .faq-question {
@@ -2366,6 +2448,69 @@ footer {
   .lead-popup {
     bottom: 10px;
     left: 10px;
+  }
+  
+  /* Extra small footer improvements for phones */
+  footer {
+    padding: 30px 0 15px;
+    margin-top: 40px;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+  
+  .footer-section h3 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+  
+  .footer-section p {
+    font-size: 0.8rem;
+    line-height: 1.6;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-section ul li a {
+    font-size: 0.8rem;
+  }
+  
+  .social-links {
+    gap: 8px;
+  }
+  
+  .social-link {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+  
+  .contact-item {
+    font-size: 0.8rem;
+    margin-bottom: 10px !important;
+  }
+  
+  .contact-item span {
+    font-size: 1rem;
+  }
+  
+  .contact-item a {
+    font-size: 0.8rem;
+  }
+  
+  .footer-bottom {
+    padding-top: 12px;
+    font-size: 0.75rem;
+  }
+  
+  .footer-bottom p {
+    margin-bottom: 6px;
+  }
     right: 10px;
     max-width: none;
   }
@@ -2536,6 +2681,102 @@ footer {
   
   .nav-links {
     gap: 25px;
+  }
+}
+
+/* ==================== WHO WE ARE SECTION ==================== */
+
+.who-we-are-section {
+  padding: var(--section-padding) 0;
+}
+
+.who-we-are-container {
+  display: block;
+  margin-bottom: 80px;
+}
+
+.who-we-are-content h2 {
+  font-size: var(--font-size-h2);
+  color: var(--light-text);
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.who-we-are-content p {
+  color: var(--text-gray);
+  line-height: 1.8;
+  margin-bottom: 18px;
+  font-size: var(--font-size-base);
+}
+
+.who-we-are-content .btn-primary {
+  margin-top: 30px;
+  display: inline-block;
+  width: auto;
+  min-width: 200px;
+}
+
+.who-we-are-image {
+  display: none;
+}
+
+.who-we-are-image::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--card-bg);
+  opacity: 0.9;
+  z-index: 0;
+}
+
+.who-we-are-image-text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: var(--primary-color);
+  font-size: clamp(3rem, 8vw, 5rem);
+  font-weight: 700;
+}
+
+/* Responsive adjustments for Who We Are */
+@media (max-width: 1024px) {
+  .who-we-are-container {
+    grid-template-columns: 1fr;
+    gap: var(--gap-size);
+    margin-bottom: 60px;
+  }
+  
+  .who-we-are-image {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .who-we-are-content h2 {
+    font-size: var(--font-size-h2);
+    margin-bottom: 20px;
+  }
+  
+  .who-we-are-content p {
+    margin-bottom: 15px;
+  }
+  
+  .who-we-are-image {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .who-we-are-section {
+    padding: 40px 0;
+  }
+  
+  .who-we-are-container {
+    margin-bottom: 40px;
+  }
+  
+  .who-we-are-image {
+    min-height: 200px;
   }
 }
 
