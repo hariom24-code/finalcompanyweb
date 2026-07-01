@@ -2193,16 +2193,25 @@ footer {
     background: rgba(5, 8, 18, 0.98);
     backdrop-filter: blur(20px);
     flex-direction: column;
+    align-items: stretch;
     gap: 0;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    width: 100%;
   }
 
   .nav-links.active {
-    max-height: 500px;
+    max-height: calc(100vh - 72px);
     border-bottom: 1px solid var(--border-color);
+    overflow-y: auto;
+    padding-bottom: 14px;
+  }
+
+  .nav-links li {
+    width: 100%;
   }
 
   .nav-links a {
@@ -2217,10 +2226,19 @@ footer {
     padding-left: clamp(25px, 4vw, 30px);
   }
 
-  .cta-btn {
+  .nav-links .cta-btn {
+    display: flex;
     width: calc(100% - 40px);
-    margin: 10px 20px;
+    margin: 12px 20px 4px;
     justify-content: center;
+    border-radius: 12px;
+    border-bottom: 0;
+    min-height: 48px;
+    align-items: center;
+  }
+
+  .nav-links .cta-btn:hover {
+    padding-left: 20px;
   }
 
   .services-grid,

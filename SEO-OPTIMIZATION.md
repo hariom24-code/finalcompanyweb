@@ -14,7 +14,7 @@ This document outlines the comprehensive SEO optimizations implemented for Codei
   - Founder: Hariom Kumbhkar (with LinkedIn URL)
   - Services: Web Development, Mobile Apps, UI/UX Design, Digital Marketing
   - Contact: Phone, Email
-  - Founded: 2016
+   - Founded: 2024
   - Social Media Links
 
 ### B. Person Schema (Founder) (index.html)
@@ -40,8 +40,8 @@ This document outlines the comprehensive SEO optimizations implemented for Codei
 
 ### A. Title Tags (Updated on all pages)
 Format includes "CodeinBrain" and target keywords:
-- **Index**: "CodeinBrain - Digital Solutions Company for Web, App & Marketing Growth"
-- **About**: "About CodeinBrain - Founded by Hariom Kumbhkar | Digital Solutions Company"
+- **Index**: "CodeinBrain - Web, App Development & SEO by Hariom Kumbhkar"
+- **About**: "About Us - CodeinBrain | Founded by Hariom Kumbhkar"
 - **Services**: "CodeinBrain Services - Web, App Development, SEO & Digital Marketing"
 - **Portfolio**: "CodeinBrain Portfolio - Web Development, App Design & Digital Solutions"
 - **Contact**: "Contact CodeinBrain - Digital Solutions Company Contact"
